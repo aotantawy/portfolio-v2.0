@@ -17,10 +17,33 @@
       href="/assets/icons/favicon.png"
       type="image/x-icon"
     />
+
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="/assets/styles.css" />
     <title>Ahmed Osama Tantawy</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="d-flex align-items-start">
+        <!--Tabs-->
+        <div class="nav flex-column justify-content-center nav-pills me-3 all-tabs" role="tablist">
+          <button class="nav-link tab-btn active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab">Home</button>
+          <button class="nav-link tab-btn" id="v-pills-portfolio-tab" data-bs-toggle="pill" data-bs-target="#v-pills-portfolio" type="button" role="tab">Portfolio</buttona>
+          <button class="nav-link tab-btn" id="v-pills-social-media-tab" data-bs-toggle="pill" data-bs-target="#v-pills-social-media" type="button" role="tab">Social Media</button>
+        </div>
+        <!-- Content of Each tab -->
+        <div class="tab-content mt-4" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel">Home tab content</div>
+          <div class="tab-pane fade" id="v-pills-portfolio" role="tabpanel">Portfolio tab content</div>
+          <div class="tab-pane fade" id="v-pills-social-media" role="tabpanel">social media tab content</div>
+        </div>
+      </div>
 
     <!--Bootstrap js -->
     <script

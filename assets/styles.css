@@ -1,0 +1,22 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.all-tabs {
+  height: 100vh;
+}
+
+.tab-btn {
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  margin: 5% 0;
+}
+
+.tab-btn.active,
+.nav-pills .show > .nav-link {
+  background-color: #212429 !important;
+  color: white !important;
+}
+
+.tab-content {
+    
+}
