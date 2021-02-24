@@ -1,27 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.all-tabs {
-  height: 100vh;
-}
 
-.tab-btn {
-  border-bottom-left-radius: 0 !important;
-  border-top-left-radius: 0 !important;
-  margin: 5% 0;
-}
-
-.tab-btn.active,
-.nav-pills .show > .nav-link {
-  background-color: #212429 !important;
-  color: white !important;
-}
-
-.profile-img {
-  margin: auto 2% 2%;
-}
-.profile-img > img{
-  width: 15%;
-  height: auto;
-  box-shadow: 0 1px 1px 0 #212429, 0 1px 1px 0 #212429;
+.nav-bar {
+  background-color: white;
+  padding: 1% 1% 0;
 }
