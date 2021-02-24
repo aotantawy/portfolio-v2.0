@@ -16,3 +16,12 @@ body {
   background-color: #212429 !important;
   color: white !important;
 }
+
+.profile-img {
+  margin: auto 2% 2%;
+}
+.profile-img > img{
+  width: 15%;
+  height: auto;
+  box-shadow: 0 1px 1px 0 #212429, 0 1px 1px 0 #212429;
+}
