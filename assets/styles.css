@@ -6,3 +6,19 @@ body {
   background-color: white;
   padding: 1% 1% 0;
 }
+
+.tab-content{
+  margin: 1%;
+  padding: 0;
+}
+
+.section-body{
+  margin-left: 2%;
+}
+
+.section-img{
+  margin: 2%;
+  margin-right: 3%;
+  float: right;
+  width: 10%;
+}
