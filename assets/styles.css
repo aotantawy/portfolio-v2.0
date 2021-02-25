@@ -31,7 +31,15 @@ section {
 }
 
 @media (max-width: 900px) {
+  section > h1 {
+    margin: 5% auto;
+  }
   .section-img {
     display: none;
   }
+}
+
+.group-list {
+  width: 40%;
+  margin-bottom: 2%;
 }
