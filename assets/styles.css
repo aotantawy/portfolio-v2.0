@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  box-sizing: content-box;
+  overflow-x: hidden;
 }
 
 .nav-bar {
@@ -7,18 +9,25 @@ body {
   padding: 1% 1% 0;
 }
 
-.tab-content{
+.tab-content {
   margin: 1%;
   padding: 0;
 }
 
-.section-body{
-  margin-left: 2%;
+.section-body {
+  margin: 2%;
 }
 
-.section-img{
+.section-img {
   margin: 2%;
   margin-right: 3%;
   float: right;
   width: 10%;
+  min-width: 260px;
+}
+
+@media (max-width: 900px) {
+  .section-img {
+    display: none;
+  }
 }
