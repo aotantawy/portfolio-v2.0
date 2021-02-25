@@ -11,6 +11,7 @@ body {
 
 section {
   margin: 1% auto 5%;
+  overflow: hidden;
 }
 
 .tab-content {
@@ -30,16 +31,64 @@ section {
   min-width: 260px;
 }
 
+.group-list {
+  margin-bottom: 2%;
+  width: 40%;
+}
+
+.project {
+  margin: 0 0 2%;
+  overflow: hidden;
+  width: 50%;
+}
+
+.project img {
+  float: none;
+  position: relative;
+  right: -50%;
+  transform: translateX(-50%);
+}
+
+.project h4 {
+  text-align: center;
+  width: 100%;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #6d737e;
+}
+
+.project p {
+  text-align: center;
+}
+.project-skills-list {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.project-skills-list li {
+  margin: 1%;
+}
+
+.project-skills-list li:hover {
+  background-color: inherit;
+  color: black;
+}
+
 @media (max-width: 900px) {
   section > h1 {
     margin: 5% auto;
   }
-  .section-img {
+  .about .section-img {
     display: none;
   }
-}
-
-.group-list {
-  width: 40%;
-  margin-bottom: 2%;
+  .project {
+    width: 100%;
+  }
 }
