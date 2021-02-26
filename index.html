@@ -1,140 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="shortcut icon"
-      href="/assets/icons/favicon.png"
-      type="image/x-icon"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="/assets/icons/favicon.png" type="image/x-icon" />
 
-    <!--External CSS-->
-    <link rel="stylesheet" href="/assets/styles.css" />
-    <title>Ahmed Osama Tantawy</title>
-  </head>
+  <!--Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
-  <body>
-    <nav class="nav-bar sticky-top">
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button
-          class="nav-link active"
-          id="nav-home-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-home"
-          type="button"
-          role="tab"
-        >
-          Home
-        </button>
-        <button
-          class="nav-link"
-          id="nav-portfolio-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-portfolio"
-          type="button"
-          role="tab"
-        >
-          Portfolio
-        </button>
-        <button
-          class="nav-link"
-          id="nav-contact-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-contact"
-          type="button"
-          role="tab"
-        >
-          Contact
-        </button>
-      </div>
-    </nav>
-    <div class="tab-content container-fluid" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-home" role="tabpanel">
-        <!--About Section-->
-        <section class="about">
-          <h1>About Me</h1>
-          <img
-            src="/assets/photos/ahmed-osama.jpg"
-            alt="ahmed osama photo"
-            class="rounded section-img"
-          />
-          <p class="section-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde
-            officiis optio dolorum eum, recusandae sapiente esse iure tempore
-            sed cum cumque repellendus sequi quam saepe enim. Est, recusandae
-            voluptatibus.
-          </p>
-          <p class="section-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde
-            officiis optio dolorum eum, recusandae sapiente esse iure tempore
-            sed cum cumque repellendus sequi quam saepe enim. Est, recusandae
-            voluptatibus.
-          </p>
-        </section>
+  <!--External CSS-->
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <title>Ahmed Osama Tantawy</title>
+</head>
 
-        <!--Skills Section-->
-        <section class="skills">
-          <h1>Skills</h1>
-          <div class="d-flex justify-content-between flex-wrap section-body">
-            <div class="group-list">
-              <h4>List Group:</h4>
-              <ul class="list-group ms-3 skills-group-list">
-                <li class="list-group-item">item 1</li>
-                <li class="list-group-item">item 2</li>
-                <li class="list-group-item">item 3</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!--Portfolio page -->
-      <div class="tab-pane fade" id="nav-portfolio" role="tabpanel">
-        <section class="projects">
-          <div class="d-flex justify-content-between flex-wrap section-body">
-            <!--Projects-->
-            <div class="group-list project">
-              <img
-                src="/assets/photos/ahmed-osama.jpg"
-                alt=""
-                class="rounded section-img"
-              />
-              <h4>
-                <a href="#" class="link-dark project-link">Project Name</a>
-              </h4>
-              <p class="text-muted">description</p>
-              <ul class="text-muted project-skills-list">
-                <li class="btn btn-outline-dark">skill one</li>
-                <li class="btn btn-outline-dark">skill two</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel">...</div>
+<body>
+  <nav class="nav-bar sticky-top">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+        role="tab">
+        Home
+      </button>
+      <button class="nav-link" id="nav-portfolio-tab" data-bs-toggle="tab" data-bs-target="#nav-portfolio" type="button"
+        role="tab">
+        Portfolio
+      </button>
     </div>
+  </nav>
+  <div class="tab-content container-fluid" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel">
+      <!--About Section-->
+      <section class="about">
+        <h1>About Me</h1>
+        <img src="/assets/photos/ahmed-osama.jpg" alt="ahmed osama photo" class="rounded section-img" />
+        <p class="section-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde
+          officiis optio dolorum eum, recusandae sapiente esse iure tempore
+          sed cum cumque repellendus sequi quam saepe enim. Est, recusandae
+          voluptatibus.
+        </p>
+        <p class="section-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam unde
+          officiis optio dolorum eum, recusandae sapiente esse iure tempore
+          sed cum cumque repellendus sequi quam saepe enim. Est, recusandae
+          voluptatibus.
+        </p>
+      </section>
 
-    <!--Bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <!--Skills Section-->
+      <section class="skills">
+        <h1>Skills</h1>
+        <div class="d-flex justify-content-between flex-wrap section-body">
+          <div class="group-list">
+            <h4>List Group:</h4>
+            <ul class="list-group ms-3 skills-group-list">
+              <li class="list-group-item">item 1</li>
+              <li class="list-group-item">item 2</li>
+              <li class="list-group-item">item 3</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Portfolio page -->
+    <div class="tab-pane fade" id="nav-portfolio" role="tabpanel">
+      <section class="projects">
+        <div class="d-flex justify-content-between flex-wrap section-body">
+          <!--Projects-->
+          <div class="group-list project">
+            <img src="/assets/photos/ahmed-osama.jpg" alt="" class="rounded section-img" />
+            <h4>
+              <a href="#" class="link-dark project-link">Project Name</a>
+            </h4>
+            <p class="text-muted">description</p>
+            <ul class="text-muted project-skills-list">
+              <li class="btn btn-outline-dark">skill one</li>
+              <li class="btn btn-outline-dark">skill two</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--Footer and contact list-->
+  <footer>
+    <ul class="contact-links-list">
+      <li>
+        <a href="tel:+201093323359" class="link-dark contact-link">Phone</a>
+      </li>
+      <li>
+        <a href="mailto:aotantawy@gmail.com" class="link-dark contact-link" target="_blank">Gmail</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/aotantawy/" class="link-dark contact-link" target="_blank">Linkedin</a>
+      </li>
+      <li>
+        <a href="https://github.com/AOTantawy" class="link-dark contact-link" target="_blank">Github</a>
+      </li>
+      <li>
+        <a href="/assets/pdfs/ahmedOsamaCV.pdf" class="link-dark contact-link" download="ahmed-osama-CV">CV</a>
+      </li>
+    </ul>
+  </footer>
+
+  <!--Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
