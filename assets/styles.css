@@ -12,7 +12,7 @@ body {
 
 /* Section styling*/
 section {
-  margin: 1% auto 5%;
+  margin: 1% auto 2%;
   overflow: hidden;
 }
 
@@ -57,6 +57,10 @@ section {
 }
 
 /* Link Styling */
+.list-group-item {
+  width: 75%;
+}
+
 .project-link,
 .contact-links-list a {
   text-decoration: none;
@@ -106,6 +110,9 @@ section {
     display: none;
   }
   .project {
+    width: 100%;
+  }
+  .group-list {
     width: 100%;
   }
 }
