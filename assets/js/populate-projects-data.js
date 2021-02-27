@@ -18,8 +18,9 @@ const createProjectCard = (projectData) => {
   img.setAttribute("src", projectData.src);
   img.setAttribute("alt", projectData.title);
   img.setAttribute("class", "rounded section-img");
-  projectLink.setAttribute("href", "#");
+  projectLink.setAttribute("href", projectData.githubRepo);
   projectLink.setAttribute("class", "link-dark project-link");
+  projectLink.setAttribute("target", "_blank");
   ul.setAttribute("class", "project-skills-list");
   header.textContent = projectData.title;
   description.textContent = projectData.description;
