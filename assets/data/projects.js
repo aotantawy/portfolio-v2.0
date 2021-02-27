@@ -1,6 +1,23 @@
 const projects = {
   projects: [
     {
+      id: "monefy",
+      title: "Monefy",
+      src: "/assets/projects-pics/monefy.png",
+      description:
+        "Fintech application that trying to predict stock indices using machine learning (XGBoost Model).",
+      githubRepo: "https://github.com/AOTantawy/stock-prediction-ML",
+      tools: [
+        "Python",
+        "Node js",
+        "Express js",
+        "mongodb",
+        "mongoose",
+        "dotenv",
+        "EJS",
+      ],
+    },
+    {
       id: "trie",
       title: "Trie",
       src: "/assets/projects-pics/trie.png",
