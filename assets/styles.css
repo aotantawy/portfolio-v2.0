@@ -1,24 +1,26 @@
-/* Body Styling*/
+/* body styling*/
 body {
-  font-family: "Roboto", sans-serif;
   box-sizing: content-box;
-  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
-/* nav-bar styling */
+
+/* navbar styling */
 .nav-bar {
   background-color: white;
+  box-shadow: 0 0 5px 0 #dee1e6, 0 0 5px 0 #dee1e6;
   padding: 1% 1% 0;
 }
 
-/* Section styling*/
+/* tab content container styling */
+.tab-content {
+  margin: 1% auto;
+  padding: 0 0 0 1%;
+}
+
+/* section styling*/
 section {
   margin: 1% auto 2%;
   overflow: hidden;
-}
-
-.tab-content {
-  margin: 1%;
-  padding: 0;
 }
 
 .section-body {
@@ -33,11 +35,17 @@ section {
   min-width: 260px;
 }
 
+/* group list styling */
 .group-list {
   margin-bottom: 2%;
   width: 40%;
 }
 
+.list-group-item {
+  width: 75%;
+}
+
+/* projects styling */
 .project {
   margin: 0 1% 2%;
   overflow: hidden;
@@ -58,11 +66,11 @@ section {
   font-weight: bold;
 }
 
-/* Link Styling */
-.list-group-item {
-  width: 75%;
+.project p {
+  text-align: center;
 }
 
+/* links styling */
 .project-link,
 .contact-links-list a {
   text-decoration: none;
@@ -72,10 +80,6 @@ section {
 .contact-links-list a:hover {
   color: #6d737e;
   opacity: 0.5;
-}
-
-.project p {
-  text-align: center;
 }
 
 /* List styling */
@@ -105,7 +109,7 @@ section {
   margin-right: 2%;
 }
 
-/* Mobile styling */
+/* mobile styling */
 @media (max-width: 900px) {
   section > h1 {
     margin: 5% auto;

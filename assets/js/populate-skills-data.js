@@ -1,19 +1,34 @@
 import skills from "./../data/skills.js";
-const populateSkills = () => {
-  skills.groups.forEach((skill) => {
-    const div = document.createElement("div");
-    const skillHeader = document.createElement("h4");
-    const ul = document.createElement("ul");
-    div.setAttribute("class", "group-list");
-    ul.setAttribute("class", "list-group ms-3 skills-group-list");
-    skillHeader.textContent = skill.groupName;
-    ul.innerHTML = skill.groupSkills.map(mapListItems).join('');
-    div.appendChild(skillHeader);
-    div.appendChild(ul);
-    document.querySelector(".skills .section-body").appendChild(div);
-  });
+
+const createHeaderElement = (headerTextContent) => {
+  const header = document.createElement("h4");
+  header.textContent = headerTextContent;
+  return header;
 };
 
-const mapListItems = (item) => `<li class="list-group-item">${item}</li>`;
+const createListItems = (itemTextContent) =>
+  `<li class="list-group-item">${itemTextContent}</li>`;
+
+const createUnorderedListElement = (listItemsContent) => {
+  const ul = document.createElement("ul");
+  ul.setAttribute("class", "list-group ms-3 skills-group-list");
+  ul.innerHTML = listItemsContent.map(createListItems).join("");
+  return ul;
+};
+
+const createDivElement = (skillData) => {
+  const div = document.createElement("div");
+  div.setAttribute("class", "group-list");
+  div.appendChild(createHeaderElement(skillData.groupName));
+  div.appendChild(createUnorderedListElement(skillData.groupSkills));
+  return div;
+};
+
+const populateSkills = () => {
+  skills.groups.forEach((skill) => {
+    const skillDiv = createDivElement(skill);
+    document.querySelector(".skills .section-body").appendChild(skillDiv);
+  });
+};
 
 export default populateSkills;

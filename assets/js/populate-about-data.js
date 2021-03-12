@@ -1,10 +1,16 @@
 import about from "./../data/about.js";
+
+const createParagraph = (paragraphContent) => {
+  const paragraph = document.createElement("p");
+  paragraph.setAttribute("class", "section-body");
+  paragraph.textContent = paragraphContent;
+  return paragraph;
+};
+
 const populateAbout = () => {
-  about.paragraphs.forEach((element) => {
-    const createElement = document.createElement("p");
-    createElement.setAttribute("class", "section-body");
-    createElement.textContent = element;
-    document.querySelector(".about").appendChild(createElement);
+  about.paragraphs.forEach((paragraph) => {
+    const paragraphElement = createParagraph(paragraph);
+    document.querySelector(".about").appendChild(paragraphElement);
   });
 };
 
