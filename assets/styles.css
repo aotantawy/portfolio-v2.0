@@ -109,6 +109,14 @@ section {
   margin-right: 2%;
 }
 
+/* scroll up button styling */
+.scroll-up {
+  background-color: white;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
 /* mobile styling */
 @media (max-width: 900px) {
   section > h1 {
